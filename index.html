@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>App Pulse — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #0a84ff;
+    --rule: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #f2f2f7;
+      --muted: #9a9aa0;
+      --accent: #0a84ff;
+      --rule: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 2.2em 0 0.5em; }
+  h3 { font-size: 1.05rem; margin: 1.6em 0 0.4em; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 8px; }
+  .summary {
+    border-left: 3px solid var(--accent);
+    padding: 4px 0 4px 16px;
+    margin: 24px 0;
+    color: var(--muted);
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 24px 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25em; }
+  li { margin: 0.3em 0; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for App Pulse</h1>
+  <p class="meta">Last updated: 17 October 2026<br>Developer: Liam Hennessy</p>
+  <p>This Privacy Policy explains how App Pulse: Track your stats (&ldquo;App Pulse&rdquo;, &ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;I&rdquo;) handles your information when you use the App Pulse iOS application and its Home Screen widgets.</p>
+
+  <p class="summary">In short: App Pulse collects no data. There is no account, no server of ours, no analytics, no crash reporting, no advertising and no tracking. Your App Store Connect key and your sales history stay on your iPhone. The app talks to Apple to fetch your own reports, and to a public exchange-rate service that receives only dates.</p>
+
+  <hr>
+
+  <h2>Information We Collect</h2>
+  <p>None. Nothing you enter into App Pulse, and nothing it downloads, is ever sent to us. We have no server for it to be sent to.</p>
+
+  <h3>Information You Provide</h3>
+  <ul>
+    <li><strong>Your App Store Connect API key</strong> &mdash; the private key (.p8 file), Key ID, Issuer ID and Vendor Number you create in App Store Connect. Stored on your device only, and used only to request your own reports from Apple. See &ldquo;Your API Key&rdquo; below.</li>
+    <li><strong>Preferences</strong> &mdash; your Reporting Currency, Headline Metric, the Apps you hide, and how each widget is set up. Stored on your device only.</li>
+  </ul>
+
+  <h3>Information Downloaded From Apple</h3>
+  <ul>
+    <li><strong>Your sales reports</strong> &mdash; Apple&rsquo;s daily Sales and Trends reports for your team, including units, proceeds, subscriptions and the countries they came from. Downloaded directly from Apple with your own key and stored on your device only.</li>
+    <li><strong>Your Apps&rsquo; details</strong> &mdash; each App&rsquo;s name, bundle ID, SKU and App Store icon. Stored on your device only.</li>
+  </ul>
+
+  <h3>Information We Do Not Collect</h3>
+  <ul>
+    <li>No name, email address, phone number, or account of any kind</li>
+    <li>No analytics or usage tracking</li>
+    <li>No crash reporting</li>
+    <li>No advertising identifiers, and no advertising, marketing or third-party SDKs</li>
+    <li>No location, contacts, photos, calendars, health data, camera or microphone access</li>
+  </ul>
+  <p>App Pulse does not track you across apps or websites, and shows no App Tracking Transparency prompt because it has nothing to ask for.</p>
+
+  <hr>
+
+  <h2>How Your Information Is Used</h2>
+  <ul>
+    <li>To request your daily sales reports from Apple and show your proceeds, downloads and subscriptions</li>
+    <li>To convert proceeds earned in other currencies into the currency you choose</li>
+    <li>To show each App&rsquo;s icon</li>
+    <li>To keep your Home Screen widgets up to date</li>
+    <li>To remember the settings you choose</li>
+  </ul>
+  <p>We do not sell, rent, or share any of your data with anyone. We never see it.</p>
+
+  <hr>
+
+  <h2>Your API Key</h2>
+  <p>App Pulse reads your reports with a team API key that you create in App Store Connect. A key with the <strong>Sales and Reports</strong> role can read sales reports and nothing else: it cannot change your Apps, see your banking or tax details, or manage your team.</p>
+  <ul>
+    <li><strong>It stays on this iPhone.</strong> The key is stored in your device&rsquo;s Keychain, set so that it is never synced through iCloud Keychain and cannot be restored onto a different device.</li>
+    <li><strong>It is sent only to Apple.</strong> The app uses the key to sign short-lived requests to App Store Connect (api.appstoreconnect.apple.com). The key and the signed token are never attached to a request to anywhere else.</li>
+    <li><strong>You can revoke it at any time</strong> in App Store Connect, under Users and Access &rarr; Integrations. Once revoked, App Pulse can no longer read your reports.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Data Stored on Your Device</h2>
+  <p>Your key, settings, App details and sales history are stored on your device, in the app&rsquo;s private storage. App Pulse keeps the raw report files it downloads, so your history can grow beyond the one year Apple keeps.</p>
+  <p>A summary of your figures is shared between the app and its Home Screen widgets using an Apple App Group. This is a private area of your own device; it is not transmitted anywhere.</p>
+  <p>Like other app data, your stored history can be included in your device&rsquo;s own backups (iCloud Backup or a computer backup), which you control through Apple. Your key cannot be restored onto a different device.</p>
+  <p><strong>Disconnect</strong>, in the app&rsquo;s Settings, deletes your key, your stored history, the downloaded report files and the widgets&rsquo; summary. Deleting the app removes all of it too.</p>
+
+  <hr>
+
+  <h2>Services the App Contacts</h2>
+  <p>App Pulse makes requests to these services only. None of them is operated by us, and none receives anything that identifies you to us.</p>
+  <ul>
+    <li><strong>Apple App Store Connect</strong> (api.appstoreconnect.apple.com) &mdash; your sales reports and your list of Apps, requested with your own key and Vendor Number. <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a></li>
+    <li><strong>Apple iTunes Search</strong> (itunes.apple.com and Apple&rsquo;s image servers) &mdash; your Apps&rsquo; icons, requested by their public App Store ID. <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a></li>
+    <li><strong>Frankfurter</strong> (api.frankfurter.dev) &mdash; daily reference exchange rates, published by central banks. Each request contains only a range of dates and a base currency. It contains no identifiers, no key, and none of your figures, so every user&rsquo;s request looks the same apart from its dates. <a href="https://frankfurter.dev">frankfurter.dev</a></li>
+  </ul>
+  <p>Converted proceeds are estimates, based on each day&rsquo;s reference rate, and may differ from what Apple pays you.</p>
+
+  <hr>
+
+  <h2>Background Refresh</h2>
+  <p>If iOS allows it, App Pulse refreshes your reports in the background shortly after Apple publishes them each morning. A background refresh contacts the same services, sends the same information, and stores the results on your device in the same way.</p>
+
+  <hr>
+
+  <h2>The Demo Portfolio</h2>
+  <p>The built-in Demo Portfolio is generated on your device from made-up figures for fictional Apps. Exploring it needs no key and makes no network requests at all: its reports, App details and exchange rates are all generated on your device.</p>
+
+  <hr>
+
+  <h2>Purchases</h2>
+  <p>App Pulse has no in-app purchases or subscriptions, and processes no payment information.</p>
+
+  <hr>
+
+  <h2>Notifications</h2>
+  <p>App Pulse does not send you push notifications.</p>
+
+  <hr>
+
+  <h2>Data Retention</h2>
+  <p>Data stored on your device remains until you choose Disconnect or remove the app. We hold no copy of anything, so there is nothing for us to retain or delete.</p>
+
+  <hr>
+
+  <h2>Your Rights</h2>
+  <p>If you are in the UK or the European Economic Area, you have rights of access, correction, deletion, and portability over personal data relating to you.</p>
+  <p>In practice, everything App Pulse holds is on your own device and under your control: Disconnect or deleting the app deletes it, and we hold no copy. Your sales data itself is held by Apple and governed by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. If you have any other request, contact us using the details below and we will respond.</p>
+
+  <hr>
+
+  <h2>Children&rsquo;s Privacy</h2>
+  <p>App Pulse is a tool for App Store developers and is not directed at children under 13. We do not knowingly collect personal information from anyone, including children under 13.</p>
+
+  <hr>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the &ldquo;Last updated&rdquo; date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
+  <p><strong>Liam Hennessy</strong><br>
+  Email: <a href="mailto:c25krunnerfeedback@gmail.com">c25krunnerfeedback@gmail.com</a></p>
+
+  <footer>© 2026 Liam Hennessy. App Pulse.</footer>
+</main>
+</body>
+</html>
